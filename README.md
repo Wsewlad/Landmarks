@@ -1,2 +1,2 @@
 # Landmarks
-SwiftUI training
+SwiftUI Apple's tutorial
