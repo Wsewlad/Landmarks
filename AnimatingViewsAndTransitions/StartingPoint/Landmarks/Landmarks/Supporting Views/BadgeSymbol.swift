@@ -1,16 +1,15 @@
-//
-//  BadgeSymbol.swift
-//  Landmarks
-//
-//  Created by  Vladyslav Fil on 20.10.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that display a symbol in a badge.
+*/
 
 import SwiftUI
 
 struct BadgeSymbol: View {
     static let symbolColor = Color(red: 79.0 / 255, green: 79.0 / 255, blue: 191.0 / 255)
-    
+
     var body: some View {
         GeometryReader { geometry in
             Path { path in
@@ -18,7 +17,7 @@ struct BadgeSymbol: View {
                 let height = width * 0.75
                 let spacing = width * 0.030
                 let middle = width / 2
-                let topWidth = 0.266 * width
+                let topWidth = 0.226 * width
                 let topHeight = 0.488 * height
                 
                 path.addLines([
