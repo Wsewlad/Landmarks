@@ -1,10 +1,9 @@
-//
-//  ProfileSummary.swift
-//  Landmarks
-//
-//  Created by  Vladyslav Fil on 21.10.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that summarizes a profile.
+*/
 
 import SwiftUI
 
@@ -25,7 +24,7 @@ struct ProfileSummary: View {
                 .font(.title)
             
             Text("Notifications: \(self.profile.prefersNotifications ? "On": "Off" )")
-                        
+            
             Text("Seasonal Photos: \(self.profile.seasonalPhoto.rawValue)")
             
             Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormat)")
@@ -39,7 +38,7 @@ struct ProfileSummary: View {
                         
                         HikeBadge(name: "Earth Day")
                             .hueRotation(Angle(degrees: 90))
-                        
+                               
                         HikeBadge(name: "Tenth Hike")
                             .grayscale(0.5)
                             .hueRotation(Angle(degrees: 45))
@@ -51,7 +50,7 @@ struct ProfileSummary: View {
             VStack(alignment: .leading) {
                 Text("Recent Hikes")
                     .font(.headline)
-                
+            
                 HikeView(hike: hikeData[0])
             }
         }

@@ -1,10 +1,9 @@
-//
-//  HikeBadge.swift
-//  Landmarks
-//
-//  Created by  Vladyslav Fil on 21.10.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that shows a badge for hiking.
+*/
 
 import SwiftUI
 
@@ -16,7 +15,6 @@ struct HikeBadge: View {
                 .frame(width: 300, height: 300)
                 .scaleEffect(1.0 / 3.0)
                 .frame(width: 100, height: 100)
-            
             Text(name)
                 .font(.caption)
                 .accessibility(label: Text("Badge for \(name)."))

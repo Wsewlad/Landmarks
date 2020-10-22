@@ -1,10 +1,9 @@
-//
-//  ProfileEditor.swift
-//  Landmarks
-//
-//  Created by  Vladyslav Fil on 21.10.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+An editable profile view.
+*/
 
 import SwiftUI
 
@@ -26,7 +25,7 @@ struct ProfileEditor: View {
             }
             
             Toggle(isOn: $profile.prefersNotifications) {
-                Text("Ensble Notifications")
+                Text("Enable Notifications")
             }
             
             VStack(alignment: .leading, spacing: 20) {
@@ -47,8 +46,7 @@ struct ProfileEditor: View {
                     "Goal Date",
                     selection: $profile.goalDate,
                     in: dateRange,
-                    displayedComponents: .date
-                )
+                    displayedComponents: .date)
             }
             .padding(.top)
         }

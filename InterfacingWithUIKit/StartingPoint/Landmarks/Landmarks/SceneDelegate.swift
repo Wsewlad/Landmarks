@@ -20,7 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: CategoryHome().environmentObject(UserData()))
+            window.rootViewController = UIHostingController(rootView: //CategoryHome().environmentObject(UserData())
+                PageView(features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3/2, contentMode: .fit)
+            )
             self.window = window
             window.makeKeyAndVisible()
         }
